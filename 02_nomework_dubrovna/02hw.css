@@ -1,7 +1,9 @@
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #eff5f4	;
+    background-color: hsl(170, 23%, 95%)	;
+   
 }
+
 p , span , option{
     font-family: 'Poppins', sans-serif;
     padding: 0;
@@ -64,3 +66,7 @@ label {
 .city{
     margin: 15px;
   }
+::placeholder{
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+}
