@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="02hw.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">   
+    <title>HW2</title>
+</head>
+<body>
+      <table>
+        <tr>
+            <th>Ім'я</th>
+            <th>Прізвище</th>
+            <th>Телефон</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Андріана</td>
+            <td>Макара</td>
+            <td>+380 099 764 19 64</td>
+            <td>makara.andriana@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Денис</td>
+            <td>Кудибин</td>
+            <td>+380 098 387 10 38</td>
+            <td>denus.kydubun@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Антон</td>
+            <td>Надюк</td>
+            <td>+380 066 835 47 94</td>
+            <td>anton.naduk@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Валентина</td>
+            <td>Петрюк</td>
+            <td>+380 095 765 32 90</td>
+            <td>valentyna.petryk@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Олег</td>
+            <td>Піддубний</td>
+            <td>+380 097 567 94 33</td>
+            <td>oleg.piddubny@gmail.com</td>
+        </tr>
+      </table>
+
+      <form action="#" method="get"  enctype="multipart/form-data">
+        <div class="name">
+        <label for="first_name">First name:</label><br>
+        <input tabindex="1" placeholder="Enter your first name" type="text" id="first_name" name="first_name" value=""><br>
+        <label for="last_name">Last name:</label><br>
+        <input tabindex="2" placeholder="Enter your last name" type="text" id="last_name" name="last_name" value=""><br><br>
+        </div>
+
+        <div class="gender">
+            <p>Choose a gender</p>
+            <input checked type="radio" value="woman" name="gender" id="woman"> <label for="woman">Woman</label>
+            <input  type="radio" value="man" name="gender" id="man"> <label for="man">Man</label>
+        </div>
+
+        <div>
+        <textarea name="additional informations" cols ="30" rows="5" placeholder="Additional informations"></textarea>
+        </div>
+
+        <div class="language">
+            <p>Choose a Language</p>
+            <input type="checkbox" name="Ukrainian" value="yes" id="Ukrainian" checked/> <label for="Ukrainian">Ukrainian</label><br>
+            <input type="checkbox" name="English" value="yes" id="English"/> <label for="English">English</label><br>
+            <input type="checkbox" name="Serbian" value="yes" id="Serbian"/> <label for="Serbian">Serbian</label><br>
+            <input type="checkbox" name="Latin" value="yes" id="Latin" disabled/> <label for="Latin">Latin</label><br>
+        </div>
+
+        <div class="city">
+            <label for="city">Choose a City</label>
+            <select name="city" id="city">
+                <option value="none" selected disabled hidden> Select an Option</option>
+                <option value="Kyiv">Kyiv</option>
+                <option value="Lviv">Lviv</option>
+                <option value="Odessa">Odessa</option>
+                <option value="Atlantida" disabled>Atlantida</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit" class="btn">
+            <input type="reset" class="btn">
+        </div>
+        
+      </form>
+</body>
+</html>
