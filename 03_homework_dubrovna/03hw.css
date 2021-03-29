@@ -2,6 +2,7 @@ body{
     background-color: rgb(44,44,44);
     height: 100vh;
 }
+* {box-sizing: border-box;}
 .container{
     margin:114px 0px 0px 52px;
     width: 710px;
@@ -45,7 +46,7 @@ th,
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
-th { font-weight: 400; }
+th, #date { font-weight: 400; }
 
 td.file-name{ width: 50%; }
 td.file-information{ width:43% }
@@ -63,4 +64,41 @@ td.icons{ width: 7%;}
     position: relative;
     top: 14px;
     cursor: pointer;
+}
+input[type=checkbox]{
+    margin-right: 10px;}
+.search_box{
+    width: 175px;
+    border-radius: 5px;
+    background-color: rgb(68,68,68);
+    display: flex;
+    margin-right: 5px;
+}
+.search_button,.search_area{
+    color:rgb(117,117,117);
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+}
+.items_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search_icon,
+.search_area{
+    padding: 8px;
+    cursor: pointer;
+}
+.search_row{
+    padding:5px 0 5px 15px;
+}
+input[type=search]{
+    width: 100%;
+}
+input[type=search]:focus,
+.search_button:focus{
+    outline: none;
 }

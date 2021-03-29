@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">    
     <script src="https://kit.fontawesome.com/4bdeedc19e.js" crossorigin="anonymous"></script>
+    <script src="03hw.js"></script>
 </head>
 <body>
     <div class="container">
@@ -36,35 +37,47 @@
             </tr>
         </table>
         
-        <table class="table-checkbox  ">
+        <table class="table-checkbox ">
             <tr>
                 <th>
+                    <input type="checkbox" id="demo" onclick="toggle(this)"/>
                     <span class="rectangle">Name</span>
                 </th>
                 <th colspan="2">Date</th>
             </tr>
             <tr>
-                <td class="file-name">File.pdf</td>
+                <td class="file-name">
+                    <input type="checkbox" />File.pdf</td>
                 <td class="file-information" >3 mins ago</td>
                 <td><i class="icons_2 icons fas fa-ellipsis-h"></i></td>
             </tr>
             <tr>
-                <td class="file-name">File.pdf</td>
+                <td class="file-name">
+                    <input type="checkbox" checked />File.pdf</td>
                 <td class="file-information">Yesterday</td>
                 <td><i class='icons_2 icons fas fa-ellipsis-h'></i></td>
             </tr>
             <tr>
-                <td class="file-name">File.pdf</td>
+                <td class="file-name">
+                    <input type="checkbox"/>File.pdf</td>
                 <td class="file-information">June 1st, 2019</td>
                 <td><i class="icons_2 icons fas fa-ellipsis-h"></i></td>
             </tr>
         </table>
         <table class="table-icons ">
             <tr>
-                <th>
+                <th class="search_row">
                     <span class="rectangle">Name</span>
                 </th>
-                <th colspan="2">Date</th>
+                <th colspan="2" class="search_row">
+                    <div class="items_block">
+                        <span >Date</span>
+                        <div class="search_box">
+                            <button class="search_button" ><i class=" search_icon fas fa-search"></i></button>
+                            <input type="search"  class="search_area" placeholder="Search.." name="search">
+                        </div>
+                    </div>
+                </th>
             </tr>
             <tr>
                 <td class="file-name">
