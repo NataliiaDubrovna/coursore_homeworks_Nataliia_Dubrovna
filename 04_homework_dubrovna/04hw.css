@@ -166,6 +166,7 @@ select {/*arrow setting*/
     background: url(img/erow_downsvg.svg) no-repeat right #FFFFFF;
     -webkit-appearance: none; /*Remove original arrows*/
     background-position-x: 95%;
+    color: rgba(19, 39, 67, 0.5);
 }
 select > option{
     padding:21px 0px 20px 31px;
