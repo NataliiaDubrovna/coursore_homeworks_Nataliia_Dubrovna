@@ -112,12 +112,13 @@ footer{
 .header_nav .nav_items:not(:last-child){
     margin-right: 25px;
 }
+.header_nav .nav_items:first-child,
 .header_nav .nav_items:hover,
 .header_nav .nav_items:visited,
 .header_nav .nav_items:active{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 16px;
     line-height: 160%;
     color: #212353;
@@ -324,7 +325,6 @@ footer{
     display: flex;
     flex-direction: column;
 }
-
 .advantages_title{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -393,8 +393,7 @@ footer{
     font-weight: bold;
     font-size: 40px;
     line-height: 130%;
-    color: #FFFFFF;
-    
+    color: #FFFFFF;  
 }
 .testemonials_content{
     max-width: 949px;
@@ -402,12 +401,9 @@ footer{
     background: #FFFFFF;
     /* box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3); */
     box-shadow: 0px 20px 0px rgb(126 80 192 / 30%);
-    border-radius: 20px; /*?*/
+    border-radius: 20px; 
     margin-bottom: 60px;
 }
-
-
-
 
 .testemonials_content{
     padding: 60px 100px 50px;
@@ -431,10 +427,7 @@ footer{
     flex-direction: column; */
     /* align-content: space-between; */
     align-self: stretch;
-  
 }
-
-
 .testimonial_name{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -466,9 +459,6 @@ footer{
     color: #4B5D68;
     margin-top: 20px;
 }
-
-
-
 .testemonial_slider{
     display: flex;
     justify-content: space-between;
@@ -499,7 +489,153 @@ footer{
     margin-right: 20px;
 }
 
-/*==============Try for free!====================*/
+/*=================Try for free!====================*/
 
+.purple_line{
+    width: 100%;
+    height: 2px;
+    background: #9C69E2;
+    opacity: 0.2;
+    margin-bottom: 100px;
+}
+.try-for-free_inner{
+    display: flex;
+    align-items: center;
+}
+.try-for-free_title{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    color: #212353;
+    margin-bottom: 20px;
+}
+.try-for-free_content{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4B5D68;
+}
+.try-for-free_button_1{
+    background: #F063B8;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 30px;
+}
+.try-for-free_button_2{
+    margin: 0;
+}
+.try-for-free_block{
+    margin-bottom: 150px;
+}
 
+/*================= FOOTER ====================*/
+.footer_inner{
+    margin-bottom: 91px;
+    display: grid;
+    grid-template-columns: 5fr 2fr 2fr 3fr;
+    grid-template-rows:408px;
+    column-gap: 10px;
+    width: 100%;
+}
+.first_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.logo_figures{
+    margin-right: 20px;
+}
+.logo_box{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 65px;
+}
+.logo_box_title{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 160%;
+    color: #212353;
+}
+.adress{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.01em;
+    color: #212353;
+    margin-bottom: 10px;
+}
+.contact_us>p>a{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.01em;
+    color: #212353;    
+    text-decoration: none;
+}
+.copyright{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 180%;
+    letter-spacing: 0.01em;
+    color: #212353;
+    margin-top: auto;
+}
 
+.fourth_title,
+.third_title,
+.second_title{
+    margin: 10px 0 30px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #212353;
+}
+.third_colum_list,
+.second_colum_list>li{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 250%;
+    color: #212353;
+}
+.third_colum_list,
+.third_title{
+    margin-left: 26px;
+}
+.icons_social_media,
+.fourth_title{
+    margin-left: 52px;
+}
+.icons_social_media{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 178px;
+}
+.fourth_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: bottom;
+}
+.maill_us{
+    margin-left: auto;
+    margin-top: auto;
+    width: 60px;
+    height: 60px;
+}
