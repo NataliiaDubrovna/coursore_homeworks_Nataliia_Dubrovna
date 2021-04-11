@@ -45,7 +45,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*=====================Main=======================*/
+/*=====================  Main  =======================*/
 
 body{
     min-height: 900px;
@@ -61,10 +61,42 @@ body{
     grid-template-columns: 11.8% 47.1% 35.3%;
     column-gap: 2.9%; 
 }
-/*======================Aside nav-bar====================*/
+@media (max-width:1201px){
+    .content{
+        margin: 0 auto;
+        column-gap: 3%; 
+        row-gap: 10px;
+        grid-template-columns: 54% 43%;
+        grid-template-areas: "aside aside"
+                             "main aside2" ;
+    }
+    .aside1{
+        grid-area: aside;
+        grid-column-start: span 2;
+        justify-items: center;
+        /* width: 100%; */
+    }
+    main{
+        grid-area: main;
+    }
+    .aside2{
+        grid-area: aside2;
+    }
+}
+@media (max-width:983px){
+    .content{
+        margin: 0 auto;
+        gap:0;
+        grid-template-columns: 1fr;
+        grid-template-areas: "aside "
+                             "main "
+                             "aside2" ;
+    }
+}
+/*====================  Aside nav-bar  ==================*/
 .aside1{
     height: 852px; 
-    max-width: 8.25em;
+    /* max-width: 8.25em; */
     margin: 1.5em 1em;
     background-color: var(--black);
     border-radius: 1.5em;
@@ -103,6 +135,32 @@ body{
     width: 100%;
     height: 100%;
 }
+@media (max-width:1201px){
+    .aside1__inner{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+        padding: 1.3em 0;
+    } 
+    .aside1{
+        height: auto; 
+    }
+    .aside1__inner a:last-child{
+        margin: 0;
+        margin-right: 1.5em;
+    }
+    .aside1__inner a:not(:last-child){
+        margin: 0;
+    }
+    .aside1__logo{
+        margin: 0;
+        margin-left: 1.5em;
+    }   
+}
+
+
 /*=============== Header ================*/
 main{
     display: flex;
@@ -260,7 +318,50 @@ main{
 .current-courses__right-arrow{
     transform: rotate(-180deg);
 }
-
+@media (max-width:770px){
+    .current-courses{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .course-informaion{
+        width: 100%;
+    }
+    .current-courses__arrows{
+        margin: 24px auto;
+        width: 20%;
+    }
+}
+@media (max-width:426px){
+    .course-informaion{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .course-information__img-container {
+        margin:16px auto 7px;
+    }
+    .course-informaion__text {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 7px;
+    }
+    .course-informaion__inner{
+        margin: 0 auto;
+    }
+    .course-informaion__progress {
+        margin-bottom: 7px;
+    }
+    .course-informaion__button {
+        width: 70%;
+        margin: 0 auto 16px;
+    }
+    .current-courses__left-arrow{
+        margin-right: 10px;
+    }
+}
 /*============= COURSES LIST NAV-BAR =============*/
 
 .list-courses{
@@ -379,9 +480,50 @@ main{
     height: 40px;
     margin: 20px 24px 20px 0px;
 }
-/*========== Aside2 Third-column===============*/
+@media (max-width:770px){
+    .cources-avalible{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .cources-avalible-block{
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: center;
+        width: 45%;
+    }
+    .cources-avalible__logo{
+        margin: 16px auto 7px;
+    }
+    .cources-avalible__text{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 7px;
+    }
+    .cources-avalible__duration ,
+    .cources-avalible__rate {
+        margin: 0px auto 7px;
+    }
+    .courses-avalible__button{
+        margin: 0px auto 16px;
+        width: 70%;
+    }
+}
+@media (max-width:426px){
+    .cources-avalible-block{
+        width: 100%;
+    }
+}
+/*========== Aside2 Third-column ==============*/
 .aside2-inner{
     margin: 3.5em 2.5em 1.5em 0.5em;
+}
+@media (max-width:983px){
+    .aside2-inner {
+        margin: 3.5em 1em 1.5em;
+    }
 }
 /*===============  SEARCH  ===================*/
 .search-notification{
@@ -444,7 +586,7 @@ input[type="search"]::-webkit-search-results-decoration {
     object-fit: contain;
 }
 
-/*================Courses-result-counter==============*/
+/*================ Courses-result-counter ==============*/
 .courses-result-counter{
     display: flex;
     justify-content: space-between;
@@ -492,7 +634,7 @@ input[type="search"]::-webkit-search-results-decoration {
     color: var(--black);
     margin-bottom: 1em;
 }
-/*=================Learning Hours nav-bar==============*/
+/*================= Learning Hours nav-bar ==============*/
 .statistics-info{
     display: flex;
     align-items: center;
@@ -596,7 +738,34 @@ input[type="search"]::-webkit-search-results-decoration {
     align-self: center;
     justify-self: center;
 }
-/*==============buttons animation ============*/
+
+@media (max-width:983px){
+    .statistic-gragh{
+        width: 60%;
+        float: left;
+    }
+    .learn-more{
+        width:40%;
+    }
+    .learn-more{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .learn-more__img{
+        display: none;
+    }
+}
+@media (max-width:546px){
+    .learn-more{
+        width:100%;
+    }
+    .statistics-info,
+    .statistic-gragh,
+    .aside2-inner>h2{
+        display: none;
+    }
+}
+/*============  buttons animation ============*/
 .learn-more__button,
 .course-informaion__button,
 .courses-avalible__button{
@@ -615,7 +784,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 
-/*===========Notifications animation==========*/
+/*=========  Notifications animation  ========*/
 .notification {
     animation: bell-ring 3s ease-in-out infinite;
     cursor: pointer;
