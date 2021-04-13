@@ -1,0 +1,258 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+button{
+    cursor: pointer;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+
+/*=============================*/
+
+.container{
+    /* 1115 */
+    max-width: 1195px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    height: auto;
+    background: #F4F6F9 url(img/background_logo.png) no-repeat right bottom;
+    background-size: contain;
+}
+.header__inner{
+    padding: 61px 0 154px 0;
+}
+.logo{
+    width: 99px;
+    height: 32px;
+    position: relative;
+}
+.football{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.sport{
+    width: 71px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.header__logo{
+    margin: 0 0 133px 0;
+}
+.header__title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    color: #333333;
+    width: 48%;
+    margin-bottom: 30px;
+}
+.hader__text-inner{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #4F4F4F;
+    width: 40%;
+    margin-bottom: 50px;
+}
+.header__download-block{
+    /* 348 */
+    width: 31%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header__download{
+    /* width: 45%; */
+    width: 156px;
+}
+.download{
+    background: #000000;
+    border-radius: 7.33503px;   
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+.apple,
+.google_play{
+    width: 25px;
+    height: 31px;
+    margin: 8px 12px 8px 0 ;
+}
+.google{
+    width: 53px;
+    height: 18px;
+    margin-top: 2px;
+}
+.download-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+.downlod-text__title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400px;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+.download-text__inner1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 21.2716px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.download-text__inner2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17.6041px;
+    line-height: 21px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*=============== Media-Content =========*/
+
+
+.media-content{
+    background: url(img/Ronaldo.png) no-repeat left top;
+    background-size: 50% 100%;
+    height: 37em;
+    /* height: auto; */
+    position: relative;
+}
+.media-content::before{
+    position: absolute;
+    right: 50%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: linear-gradient(270deg, #FFFFFF 2.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.1);
+}
+
+/* .media__background-wrapper{
+    width: 50%;
+    height: auto;
+    position: relative;
+    z-index: -1;
+}
+.media__background-wrapper>img{
+    width: 100%;
+    height: 100%;
+}
+.media__background-wrapper::before{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 101%;
+    height: 101%;
+    content: '';
+    background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
+}
+*/
+.media_grid-inner{
+    display: grid;
+    grid-template-columns: 50% 50%;
+} 
+
+.media__information{
+    padding: 133px 0 117px 67px;
+    /* зліва перерахувати у відсотках */
+}
+
+.media__pre-title{
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+    margin-bottom: 27px;
+}
+.media__title {
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #333333;
+    margin-bottom: 27px;
+    width: 84%;
+}
+
+.media__text{
+    font-family: 'Lato',sans-serif;
+    font-style: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #4F4F4F;
+    margin-bottom: 22px;
+    width: 80%;
+}
+.media__learn-more{
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+
+}
