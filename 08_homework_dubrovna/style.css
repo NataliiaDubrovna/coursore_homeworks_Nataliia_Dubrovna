@@ -173,52 +173,33 @@ font-family: 'Roboto', sans-serif; */
 
 /*=============== Media-Content =========*/
 
-
 .media-content{
     background: url(img/Ronaldo.png) no-repeat left top;
-    background-size: 50% 100%;
-    height: 37em;
-    /* height: auto; */
+    /* background-size: 50% 100%;  */
+    background-size: contain;
+    height: auto;
     position: relative;
 }
 .media-content::before{
     position: absolute;
-    right: 50%;
+    right: 49%;
     top: 0;
     width: 100%;
     height: 100%;
     content: '';
-    background: linear-gradient(270deg, #FFFFFF 2.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.1);
+    background: linear-gradient(270deg, #FFFFFF 1.5%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.1);
 }
-
-/* .media__background-wrapper{
-    width: 50%;
-    height: auto;
-    position: relative;
-    z-index: -1;
-}
-.media__background-wrapper>img{
-    width: 100%;
-    height: 100%;
-}
-.media__background-wrapper::before{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 101%;
-    height: 101%;
-    content: '';
-    background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
-}
-*/
 .media_grid-inner{
     display: grid;
     grid-template-columns: 50% 50%;
 } 
 
+/*=================right colum============*/
+
 .media__information{
     padding: 133px 0 117px 67px;
-    /* зліва перерахувати у відсотках */
+    padding: 22.5% 0 20% 11% ;
+    background-color: #fff;
 }
 
 .media__pre-title{
@@ -238,7 +219,6 @@ font-family: 'Roboto', sans-serif; */
     margin-bottom: 27px;
     width: 84%;
 }
-
 .media__text{
     font-family: 'Lato',sans-serif;
     font-style: 400;
@@ -254,5 +234,122 @@ font-family: 'Roboto', sans-serif; */
     font-size: 16px;
     line-height: 21px;
     color: #00ADEE;
+}
+/*=================left colum============*/
+.media__program-block{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    width: 360px;
+    height: 218.06px;
+    position: relative;
+    top: 18%;
+    left: 0;
+    z-index: 4;
+}
+.media__program-notifications{
+    background: #EEEEEE;
+    border-radius: 0px 0px 4px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 27px 11px 16px;
+}
+.media__notification-text{
+    font-family: 'Lato',sans-serif;
+    font-weight: 400;
+    font-size: 18.8812px;
+    line-height: 25px;
+    color: #4F4F4F;
+}
+.media__notification-on-of{
+    width: 34px;
+    height: 21px;
+    position: relative;
+}
+.notification__siricule{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 21px;
+    height: 21px;
+    z-index: 5;
+}
+.notification__bar{
+    position: absolute;
+    right: 0;
+    top: 4px;
+    width: 28px;
+    height: 13px;
+    z-index: 4;
+}
+.media__program-information{
+    padding: 0 15px;
+    display: flex;
+}
+.media__program-text:first-child > span:first-of-type{
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    font-size: 16.7833px;
+    line-height: 22px;
+    color: #4F4F4F;
+    display: inline-block;
+    margin-top: 27px;
+    margin-bottom: 14px;
+}
+.media__program-text:first-child > p:first-of-type{
+    font-family: 'Lato',sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 14px;
+}
+.media__program-text:first-child > span:last-of-type{
+    font-family: 'Lato',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    display: inline-block;
+    margin-bottom: 17px;
+}
+.media__program-logo{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.program-logo__arsenal{
+    overflow: hidden;
+    width: 71px;
+    height: 83.87px;
+    transform: translateX(15px);
+    position: relative;
+    z-index: 5;
+}
+.program-logo__chelsea{
+    overflow: hidden;
+    width: 83.97px;
+    height: 83.87px;    
+    position: relative;
+    z-index: 6;
+}
+.program-logo__arsenal>img,
+.program-logo__chelsea>img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
 
+.media_player{
+    box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    width: 360px;
+    height: 218.06px;
+    position: relative;
+    top:60px;
+    left:18%;
+    z-index: 3;
 }
