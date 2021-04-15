@@ -30,6 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    /* max-width: 1440px;
+    margin: 0 auto; */
 }
 ol, ul {
 	list-style: none;
@@ -175,7 +177,6 @@ font-family: 'Roboto', sans-serif; */
 
 .media-content{
     background: url(img/Ronaldo.png) no-repeat left top;
-    /* background-size: 50% 100%;  */
     background-size: contain;
     height: auto;
     position: relative;
@@ -195,45 +196,50 @@ font-family: 'Roboto', sans-serif; */
 } 
 
 /*=================right colum============*/
-
 .media__information{
-    padding: 133px 0 117px 67px;
-    padding: 22.5% 0 20% 11% ;
+    padding: 23% 0 21% 11% ;
     background-color: #fff;
 }
 
-.media__pre-title{
+.pre-title{
     font-family: 'Lato',sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
     color: #00ADEE;
-    margin-bottom: 27px;
 }
-.media__title {
+.media__pre-title{
+    margin-bottom: 29px;
+}
+.title {
     font-family: 'Lato',sans-serif;
     font-weight: 700;
     font-size: 28px;
     line-height: 37px;
     color: #333333;
-    margin-bottom: 27px;
-    width: 84%;
 }
-.media__text{
+.media__title{
+    margin-bottom: 29px;
+    width: 84%;
+}    
+.text{
     font-family: 'Lato',sans-serif;
     font-style: 400;
     font-size: 16px;
     line-height: 23px;
     color: #4F4F4F;
-    margin-bottom: 22px;
+}
+.media__text{
+    margin-bottom: 24px;
     width: 80%;
 }
-.media__learn-more{
+.learn-more{
     font-family: 'Lato',sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
     color: #00ADEE;
+    text-decoration: none;
 }
 /*=================left colum============*/
 .media__program-block{
@@ -243,7 +249,6 @@ font-family: 'Roboto', sans-serif; */
     box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
     border-radius: 4px;
     width: 360px;
-    height: 218.06px;
     position: relative;
     top: 18%;
     left: 0;
@@ -276,6 +281,7 @@ font-family: 'Roboto', sans-serif; */
     width: 21px;
     height: 21px;
     z-index: 5;
+    cursor: pointer;
 }
 .notification__bar{
     position: absolute;
@@ -348,8 +354,218 @@ font-family: 'Roboto', sans-serif; */
     border-radius: 4px;
     width: 360px;
     height: 218.06px;
+    overflow: hidden;
     position: relative;
     top:60px;
     left:18%;
     z-index: 3;
+}
+.media_player>img{
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/*==============friendly interface============*/
+.interface{
+    background: #fff url(img/icons/phohe-siriculs.png) no-repeat right bottom;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+.interface__information{
+    padding: 218px 0 172px;    
+    padding: 18.9% 0 14.9%;
+}
+.interface__pre-title{
+    margin-bottom: 29px;
+}
+.interface__title{
+    margin-bottom: 29px;
+    width: 25.5%;
+}
+.interface__text{
+    margin-bottom: 56px;
+    width: 41.5%;
+}
+
+/*==================features==================*/
+.features{
+    background: #00ADEE url(img/blue_background.png) no-repeat top right;
+    background-size: cover;
+    height: 735px;
+    width: 100%;
+    padding: 76px 0px 66px;
+}
+.features__title{
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #FFFFFF;
+    margin: 0 auto 59px;
+    text-align: center;
+}
+.features__item{
+    display: flex;
+    flex-direction: column;
+
+}
+.features__icon{
+    width: 35px;
+    height: 35px;
+    margin-bottom: 12px;
+}
+.item__text{
+    font-family: 'Lato',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.text_mark{
+    margin-right: 5px;
+}
+.features__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 90px;
+    row-gap: 35px;
+}
+/*======================================*/
+.main{
+    overflow: hidden;
+}
+.user-say{
+    padding: 68px 0 50px;
+}
+.user-say__title{
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #333333;
+    margin-bottom: 63px;
+    text-align: center;
+}
+.user-say__cards{
+    display: flex;    
+    width: 117%;
+    position: relative;
+    left:-13%;
+    margin-bottom: 47px;
+}
+.user-say__card{
+    width: 309px;
+    height: 161px;
+    background: #FFFFFF;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 15px 13px 24px 17px;
+    display: flex;
+    flex-direction: column;
+}
+.user-say__card:not(:last-child){
+       margin-right: 36px;
+}
+.card-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.card-info__photo{
+    margin-right: 12px;
+    width: 30px;
+    height: 30px;
+}
+.card-info__name{
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+.twitter{
+    margin-left: auto;
+}
+.card-info__text{
+    font-family: 'Lato',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4F4F4F;
+}
+
+.user-say__last-card{
+    position: relative;
+}
+.user-say__last-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #FFFFFF 49.84%, rgba(255, 255, 255, 0) 126.7%);
+}
+.first-card__text{
+    margin-top: 55px;
+}
+.user-say__first-card{
+    position: relative;
+}
+.user-say__first-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #FFFFFF 49.84%, rgba(255, 255, 255, 0) 126.7%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.slider__dots{
+    margin: 0 auto;    
+    overflow: hidden;
+    width: 143px;
+}
+.slider__dots>img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.left-arrow__slider{
+    cursor: pointer;
+    position: absolute;
+    left: 260px;
+    top: 50px;
+}
+.right-arrow__slider{
+    cursor: pointer;
+    position: absolute;
+    right: 120px;
+    top: 50px;
+}
+/*===============parents_title====*/
+.partners{
+    background: #FAFAFA;
+    padding: 58px 0 68px;
+}
+.parents__title{
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #333333;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 58px;
+}
+.partners__logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
