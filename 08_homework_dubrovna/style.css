@@ -619,7 +619,7 @@ table {
 .interface_img{
     display: none;
     width: 100%;
-    height: 565px;
+    /* height: 565px; */
     overflow: hidden;
 }
 .interface_img > img{
@@ -714,6 +714,7 @@ table {
     .features__title{
         color: #333333;
         margin: 0 auto 40px;
+        padding: 0 20px;
         
     }
     .item__text{
@@ -727,16 +728,19 @@ table {
         justify-content: center;
         align-items: center;
     }   
-    /* .features__icon{
+    /* .features-icon {
+        fill: #00ADEE;
+    } */
+    .features__icon{
         fill:  #00ADEE;
         stroke: red;
     }
-    .features__icon:hover{
+    /* .features__icon:hover{
         stroke: red;
-    } */
+    }
     .feature>symbol>path{
         fill:  #00ADEE;
-    }
+    } */
 }
 
 /* .feature>symbol>path{
