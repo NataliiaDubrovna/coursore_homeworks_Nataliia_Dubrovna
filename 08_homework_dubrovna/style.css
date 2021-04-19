@@ -676,6 +676,7 @@ table {
     width: 35px;
     height: 35px;
     margin-bottom: 15px;
+    fill:#fff;
 }
 .item__text{
     font-family: 'Lato',sans-serif;
@@ -694,6 +695,7 @@ table {
     column-gap: 90px;
     row-gap: 35px;
 }
+
 @media (max-width:985px){
     .features__grid{
         grid-template-columns: 1fr 1fr;
@@ -728,10 +730,10 @@ table {
         justify-content: center;
         align-items: center;
     }   
-    .feature>symbol>path{
-        fill:  #00ADEE;
+    .features__icon{
+        fill:  #00ADEE;   
     }
-
+  
 }
 
 /*======================================*/
