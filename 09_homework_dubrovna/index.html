@@ -4,10 +4,296 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>HW9 Dubrovna</title>
 </head>
 <body>
-    
+
+  <header>
+    <div class="container-lg">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/Instagram.png" alt="instagram_logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+
+            
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <svg class="home">
+                    <use xlink:href="#home"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active notification-link" aria-current="page" href="#">
+                  <svg class="notification">
+                    <use xlink:href="#notification"></use>
+                  </svg>
+                  <svg class="counter">
+                    <use xlink:href="#counter"></use>
+                  </svg>
+                  <span>5</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <svg class="navigation">
+                    <use xlink:href="#navigation"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <svg class="like">
+                    <use xlink:href="#like"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <div class="photo-user_mini"><img src="img/main.jpg" alt="person"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="bar"></div>
+
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-4">
+        <div class="photo-user"><img src="img/main.jpg" alt="person"></div>
+      </div>
+      <div class="col-8">
+        <div class="folowing">
+          <h1 class="name">name</h1>
+          <button class="btn btn-primary" type="submit">Button</button>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <div class="more">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="statistic">
+           <p class="statistic__posts">79 posts</p>
+           <p class="statistic__followers">379 followers</p>
+           <p class="statistic__following">179 following</p>
+        </div>
+        <div class="about-self">
+          <p class="sub_name">Name</p>
+          <p class="self-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+          <a href="#" class="self-link">bit.ly/35Ce3mX</a>
+        </div>
+      </div>
+    </div>
+    <div class="row story-row">
+      <div class="story">
+        <div class="story-logo">
+          <div class="story-siricul"></div>
+          <div class="story-photo">
+            <img src="img/story,jpg.jpg" alt="nature">
+          </div>
+        </div>
+        <p class="name-story">Name</p>
+      </div>
+      <div class="story">
+        <div class="story-logo">
+          <div class="story-siricul"></div>
+          <div class="story-photo">
+            <img src="img/story2.jpg" alt="nature">
+          </div>
+        </div>
+        <p class="name-story">Name</p>
+      </div>
+      <div class="story">
+        <div class="story-logo">
+          <div class="story-siricul"></div>
+          <div class="story-photo">
+            <img src="img/story3.jpg" alt="nature">
+          </div>
+        </div>
+        <p class="name-story">Name</p>
+      </div>
+    </div>
+    <div class="bar"></div>
+  </div>
+
+  
+  <div class="container-lg">
+    <div class="row row-posts">
+        <div class="posts"><img src="img/layout_grid.svg" alt="#"><span>POSTS</span></div>
+        <div class="tagget"><img src="img/tagged.svg" alt="#"><span>TAGGED</span></div>
+    </div>
+  </div>
+
+
+  <div class="container-lg"> 
+    <div class="row">
+      <div class="col-4">
+        <div class="photo-post">
+          <img src="img/norway1.jpg" alt="nature">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="photo-post">
+          <img src="img/norway9.jpg" alt="nature">
+        </div>
+      </div>
+      <div class="col-4">        <div class="photo-post">
+        <img src="img/norway11.jpg" alt="nature">
+      </div></div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <div class="photo-post">
+          <img src="img/norway12.jpg" alt="nature">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="photo-post">
+          <img src="img/norway13.jpg" alt="nature">
+        </div>
+      </div>
+      <div class="col-4">        <div class="photo-post">
+        <img src="img/norway14.jpg" alt="nature">
+      </div></div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <div class="photo-post">
+          <img src="img/norway15.jpg" alt="nature">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="photo-post">
+          <img src="img/norway16.jpg" alt="nature">
+        </div>
+      </div>
+      <div class="col-4">        <div class="photo-post">
+        <img src="img/norway2.jpg" alt="nature">
+      </div></div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <div class="photo-post">
+          <img src="img/norway3.jpg" alt="nature">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="photo-post">
+          <img src="img/norway4.jpg" alt="nature">
+        </div>
+      </div>
+      <div class="col-4">        <div class="photo-post">
+        <img src="img/norway5.jpg" alt="nature">
+      </div></div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <div class="photo-post">
+          <img src="img/norway6.jpg" alt="nature">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="photo-post">
+          <img src="img/norway7.jpg" alt="nature">
+        </div>
+      </div>
+      <div class="col-4">        <div class="photo-post">
+        <img src="img/norway8.jpg" alt="nature">
+      </div></div>
+    </div>
+  </div> 
+  
+
+
+
+<div class="block-with-svg">
+
+  <svg width="0" height="0" class="hidden">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 22" id="home">
+      <path d="M22.177 22h-7.66c-.4 0-.75-.32-.75-.687v-5.631c0-1.19-1.002-2.107-2.303-2.107-1.302 0-2.303.916-2.303 2.107v5.631c0 .367-.35.687-.75.687H.75c-.4 0-.75-.32-.75-.687v-10.76c0-.183.1-.366.2-.503L10.963.206a.774.774 0 011.052 0l10.762 9.844c.2.183.3.504.15.732 0 .046-.05.046-.05.092v10.44c.05.366-.3.686-.7.686zm-6.909-1.374h6.158v-9.89l-9.912-9.065-10.012 9.157v9.798h6.157v-4.944c0-1.97 1.652-3.48 3.805-3.48 2.152 0 3.804 1.51 3.804 3.48v4.944z" fill="#262626"></path>
+    </symbol>
+  </svg>
+  <svg class="icon">
+    <use xlink:href="#home"></use>
+  </svg>
+
+  <svg width="0" height="0" class="hidden">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 19" id="notification">
+      <path d="M21.513 0H.461C.04 0-.147.509.133.787L7.62 8.098l2.573 10.55c.093.417.655.463.842.14L21.934.693C22.121.37 21.887 0 21.514 0zM2.753 1.388h15.672L8.695 6.71a.502.502 0 01-.562-.093l-5.38-5.229zm8.28 14.716l-1.87-7.682a.463.463 0 01.233-.51l9.778-5.367-8.14 13.559z" fill="#262626"></path>
+    </symbol>
+  </svg>
+  <svg class="icon">
+    <use xlink:href="#notification"></use>
+  </svg>
+
+
+  <svg width="0" height="0" class="hidden">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="counter">
+      <circle cx="9" cy="9" r="9" fill="#DC565B"></circle>
+    </symbol>
+  </svg>
+  <svg class="icon">
+    <use xlink:href="#counter"></use>
+  </svg>
+
+
+  <svg width="0" height="0" class="hidden">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" id="navigation">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0c6.085 0 11 4.915 11 11s-4.915 11-11 11S0 17.085 0 11 4.915 0 11 0zm0 20.596c5.29 0 9.596-4.307 9.596-9.596 0-5.29-4.307-9.596-9.596-9.596-5.29 0-9.596 4.307-9.596 9.596 0 5.29 4.307 9.596 9.596 9.596zM8.94 9.502c.14-.234.328-.421.562-.562l6.928-3.79c.14-.047.28-.047.374.047.094.093.14.234.047.374l-3.791 6.928c-.14.234-.328.421-.562.562L5.57 16.85c-.14.047-.28.047-.374-.047-.094-.093-.14-.234-.047-.374L8.94 9.502zm2.903 2.34l2.012-3.65-3.65 2.012 1.638 1.639z" fill="#262626"></path>
+    </symbol>
+  </svg>
+  <svg class="icon">
+    <use xlink:href="#navigation"></use>
+  </svg>
+
+  <svg width="0" height="0" class="hidden">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 19" id="like">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.821 0C12.498 0 11 2.456 11 2.456S9.502 0 6.179 0C2.762 0 0 2.966 0 6.627c0 3.66 2.855 5.746 5.71 8.249C10.018 18.676 10.299 19 11 19s.983-.324 5.29-4.124c2.902-2.55 5.71-4.634 5.71-8.25C22 2.967 19.238 0 15.821 0zm-.468 13.81c-2.527 2.224-3.885 3.475-4.353 3.753-.468-.324-2.153-1.807-4.353-3.753-2.575-2.271-5.243-4.171-5.243-7.23 0-2.873 2.153-5.236 4.775-5.236 1.919 0 2.949.927 3.698 1.946 1.685 2.364.561 2.364 2.246 0 .75-1.02 1.78-1.946 3.698-1.946 2.622 0 4.775 2.363 4.775 5.236 0 3.105-2.668 5.005-5.243 7.23z" fill="#262626"></path>
+    </symbol>
+  </svg>
+  <svg class="icon">
+    <use xlink:href="#like"></use>
+  </svg>
+
+
+  <svg width="0" height="0" class="hidden">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 29" id="magnify 88">
+      <rect x=".5" y=".5" width="215" height="28" rx="2.5" fill="#FAFAFA" stroke="#DBDBDB"></rect>
+    </symbol>
+  </svg>
+  <svg class="icon">
+    <use xlink:href="#magnify 88"></use>
+  </svg>
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,3 +1,247 @@
+
+/* font-family: 'Roboto', sans-serif; */
+
 body{
-    background-color: pink;
+    /* background-color: pink; */
+}
+
+@media (min-width: 1400px){
+    .container-lg {
+        max-width:964px;
+    }
+}
+.bg-light {
+    background-color: #fff !important;
+}
+.navbar-brand{
+    width: 105px;
+}
+.navbar-brand>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.block-with-svg{
+    display: none;
+}
+
+
+.home{
+    width: 23px;
+    height: 22px;
+}
+.notification-link{
+    height: 27px;
+    width: 30px; 
+    position: relative;  
+}
+.notification{
+    width: 22px;
+    height: 19px;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+}
+.counter{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+}
+.notification-link>span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 3px;
+    right: 6px;
+}
+
+.navigation{
+    width: 22px;
+    height: 22px;
+}
+.like{
+    width: 22px;
+    height: 19px;
+}
+.photo-user_mini{
+    width: 22px;
+    height: 22px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.photo-user_mini>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+.bar{
+    width: 100%;
+    height: 1px;
+    background: #DBDBDB;
+}
+.photo-user{
+    border-radius: 50%;
+    width: 154px;
+    height: 153px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.photo-user>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.more{
+    width: 20px;
+    height: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.more>div{
+    width: 4px;
+    height: 4px;
+    background: #262626;
+    border-radius: 50%;
+}
+.folowing{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.name{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: #262626;
+}
+.statistic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.statistic>p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #262626;
+}
+.about-self{
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;   
+}
+.sub_name{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #262626;    
+}
+.self-info{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #262626;
+}
+.self-link{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #133768;
+    text-decoration: none;
+}
+
+
+
+.story-row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.story{
+    width: 87px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.story-logo{
+    height: 87px;
+    width: 87px;
+    position: relative;
+}
+.story-siricul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #DBDBDB;
+    border-radius: 50%;
+    height: 87px;
+    width: 87px;
+}
+.story-photo{
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 79px;
+    height: 79px;
+    top: 4px;
+    left: 4px;
+}
+.story-photo>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.name-story{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #262626;
+}
+
+.row-posts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.posts,
+.tagget{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.09em;
+    color: #8F8F8F;
+    text-transform: uppercase;
+    width: 15%;
+}
+.posts{
+    color: #262626;
+}
+.photo-post{
+    overflow: hidden;
+    margin-top: 26px;
+}
+.photo-post>img{
+    width: 100%;
+    object-fit: cover;
 }
