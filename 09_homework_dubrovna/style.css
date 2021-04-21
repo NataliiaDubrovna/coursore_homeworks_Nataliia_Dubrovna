@@ -1,8 +1,5 @@
 
-/* font-family: 'Roboto', sans-serif; */
-
 body{
-    /* background-color: pink; */
     min-width: 320px;
 }
 
@@ -11,6 +8,7 @@ body{
         max-width:964px;
     }
 }
+/*===============header============*/
 .bg-light {
     background-color: #fff !important;
 }
@@ -46,8 +44,6 @@ input[type="search"]::placeholder {
 .block-with-svg{
     display: none;
 }
-
-
 .home{
     width: 23px;
     height: 22px;
@@ -111,7 +107,7 @@ input[type="search"]::placeholder {
     object-fit: contain;
 }
 
-
+/*==============bar with buttons (follow,More)=======*/
 
 .bar{
     width: 100%;
@@ -270,7 +266,7 @@ input[type="search"]::placeholder {
 }
 
 
-
+/*========followers statistic, self-info=======*/
 
 .statistic{
     display: flex;
@@ -320,13 +316,12 @@ input[type="search"]::placeholder {
 }
 
 
-
+/*=====================story*/
 
 .story-col{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* margin-left: 80px; */
     margin-left: auto;
 }
 .story{
@@ -377,6 +372,7 @@ input[type="search"]::placeholder {
     color: #262626;
 }
 
+/*===========post tagged=========*/
 .row-posts{
     display: flex;
     justify-content: center;
@@ -396,7 +392,6 @@ input[type="search"]::placeholder {
     letter-spacing: 0.09em;
     color: #8F8F8F;
     text-transform: uppercase;
-    /* max-width: 10%; */
     width: 93px;
     padding-top: 19px;
     margin-bottom: 19px;
@@ -423,7 +418,7 @@ input[type="search"]::placeholder {
     fill:#262626;
 }
 
-
+/*===================photo-post==============*/
 
 .photo-post{
     overflow: hidden;
