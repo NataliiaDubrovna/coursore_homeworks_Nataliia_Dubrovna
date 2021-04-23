@@ -1,3 +1,148 @@
 body{
-    background-color: darkgoldenrod;
+    background-color: #7fa5bd;
+    min-width: 400px;
 }
+
+
+/*=============pendulum============*/
+:root{
+    --direction:0;
+}
+.pendulum-container{
+    margin: 150px auto 100px;
+}
+.bar{
+    height: 10px;
+    width: 260px;
+    background-color: #654e68;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.pendulum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:-2px;
+}
+.pendulum>span{
+    width: 4px;
+    height: 150px;
+    background-color: #654e68;
+    margin: 0px 15px;
+    position: relative;
+}
+.pendulum>span:first-child{
+    animation: oscilations  1s ease-in-out infinite alternate;
+    --direction: 1;
+    transform-origin: top;
+}
+.pendulum>span:last-child{
+    animation: oscilations  1s ease-in-out infinite alternate-reverse;
+    --direction: -1;
+    transform-origin: top;
+}
+.pendulum>span::before{
+    content: "";
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    position:absolute;
+    background-color: black;
+    top: 150px;
+    left:-15px;
+}
+
+@keyframes oscilations {
+    0%,50%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(calc(45deg * var(--direction)));
+    }
+  }
+
+.shadow-container{
+    margin: 0 auto;    
+}
+.shadow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shadow>span{
+    width: 35px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 0.5px;
+    filter: blur(2px);
+    opacity: 0.5;
+}
+
+.shadow>span:first-child{
+    animation: oscilationsShade  1s ease-in-out infinite alternate;
+    --direction: -1;
+}
+.shadow>span:last-child{
+    animation: oscilationsShade  1s ease-in-out infinite alternate-reverse;
+    --direction: 1;
+}
+
+@keyframes oscilationsShade {
+    0%,50%{
+        filter: blur(2px);
+        transform: translateX(0)
+      }
+      100%{
+        transform: translateX(calc(100px * var(--direction))) scale(1.4, .5);
+        filter: blur(10px);
+      }
+  }
+  
+  
+/*=====================colors=======================*/
+
+.pendulum>span:first-child::before{
+    background-color: #8a5f68;
+}
+.pendulum>span:nth-child(2):before{
+    background-color: #976b73;
+}
+.pendulum>span:nth-child(3)::before{
+    background-color: #a5787e;
+}
+.pendulum>span:nth-child(4)::before{
+    background-color: #b6878c;
+}
+.pendulum>span:nth-child(5)::before{
+    background-color: #c69599;
+}
+.pendulum>span:nth-child(6)::before{
+    background-color: #d4a1a3;
+}
+.pendulum>span:last-child::before{
+    background-color: #e3afaf;
+}
+.shadow>span:first-child{
+    background-color: #68494f;
+}
+.shadow>span:nth-child(2){
+    background-color: #79565c;
+}
+.shadow>span:nth-child(3){
+    background-color: #7e5d61;
+    opacity: 0.5;
+}
+.shadow>span:nth-child(4){
+    background-color: #9c7578;
+}
+.shadow>span:nth-child(5){
+    background-color: #af8588;
+}
+.shadow>span:nth-child(6){
+    background-color: #bb8b8c;
+}
+.shadow>span:last-child{
+    background-color: #d1a5a5;
+}
+/*=================Escaliburs===========*/
