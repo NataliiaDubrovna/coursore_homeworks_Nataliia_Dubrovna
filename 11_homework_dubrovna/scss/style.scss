@@ -213,7 +213,7 @@ body{
 }
 @media (max-width:720px){
     .wrapper{
-        background: url(/img/Rectangle.png) no-repeat top;
+        background: url(../img/Rectangle.png) no-repeat top;
         background-size: 100% 800px;
     }
     .header-introduction__background{
@@ -255,7 +255,6 @@ body{
         }
     }
 }
-
 /*============== second block ==================*/
 
 .fast{
@@ -295,8 +294,7 @@ body{
         align-items: center;
         justify-content: space-between;
         width: 100%;
-    }
-    
+    }   
 }
 .options{
     display: flex;
@@ -330,7 +328,6 @@ body{
         line-height: 18px;
         color: #5D6970;
     }
-
 }
 
 @media (max-width:720px) {
@@ -349,10 +346,8 @@ body{
     }
     .options{
         align-items: center;
-    }
-    
+    }   
 }
-
 
 /*================same sections ============*/
 
@@ -582,7 +577,6 @@ body{
     &__social>svg:hover{
         fill: #929ca1;
     }
-
 }
 .social{
     &__link{
