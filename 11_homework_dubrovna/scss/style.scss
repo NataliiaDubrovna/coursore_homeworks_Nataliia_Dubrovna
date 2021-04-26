@@ -52,13 +52,14 @@ body{
     margin: 0 auto;
     min-height: 100%;
 }
+/*==============HEADER=============*/
 .background_container{
     position: relative;
 }
 .header-introduction__background{
     width: 1023/1440*100%;
     max-width: 986px;
-    max-height: 1090px;
+    max-height: 1150px;
     overflow: hidden;
     position: absolute;
     top: 0px;
@@ -70,9 +71,7 @@ body{
     height: 100%;
     object-fit: contain;
 }
-main{
-    flex: 1 1 auto;
-}
+
 .logo{
     font-family: $fontFamily;
     font-weight: 900;
@@ -84,6 +83,7 @@ main{
 .header{
     position: relative;
     z-index: 2;
+
     &__content{
         display: flex;
         justify-content: center;
@@ -120,36 +120,65 @@ main{
         }
     }
 }
-
+@media (max-width:720px) {
+    .header__nav{
+        margin-right: 0;
+        width: 90%;
+        order:3;
+    }
+    .logo{
+        font-size: 26px;
+        line-height: 38px;
+        width: 45%;
+    }
+    .header{
+        &__content{
+            margin-bottom: 190px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            flex-wrap: wrap;
+        }
+        &__btn{
+            width: 45%;
+            margin-left: 0;
+        }        
+    }
+}
+/*============== introduction block ==================*/
 .introduction{
     position: relative;
     z-index: 2;
     &__content{
         display: flex;
         justify-content: center;
+        align-items: flex-start;
         flex-direction: column;
         margin-bottom: 386px;
+        width: 539/1100*100%;
+
     }
     &__header{
         @extend %title;
         font-size: 50px;
         line-height: 66px;
         letter-spacing: 1px;
-        width: 539/1100*100%;
+        width: 100%;
         margin-bottom: 20px
     }
     &__text{
         @extend %text;
         font-size: 18px;
         line-height: 30px;
-        width: 539/1100*100%;
+        width: 100%;
         margin-bottom: 69px;
     }
     &__buttons{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 408/1110*100%;
+        width: 408/539*100%;
 
         &_kit{
             @extend %btn;
@@ -171,6 +200,64 @@ main{
         }
     }
 }
+@media (max-width:1200px){
+    .introduction__content {
+        margin-bottom: 200px;
+    }
+}
+@media (max-width:1050px){
+    .introduction__content {
+        margin-bottom: 150px;
+        width: 70%;
+    }
+}
+@media (max-width:720px){
+    .wrapper{
+        background: url(/img/Rectangle.png) no-repeat top;
+        background-size: 100% 800px;
+    }
+    .header-introduction__background{
+        display: none;
+    }
+    .introduction{
+        &__content {
+            margin: 0 auto 150px;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        &__header {
+            font-size: 40px;
+            line-height: 60px;
+        }
+        &__buttons{
+            width:90%;
+        }
+    }
+}
+@media (max-width:450px){
+    .wrapper{
+        background-size: 100% 1000px;
+    }
+    .introduction{
+        &__buttons{
+            width:90%;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &_kit{
+                width: 70%;
+                margin-bottom: 16px;
+            }
+            &_more{
+                width: 70%;
+            }
+        }
+    }
+}
+
+/*============== second block ==================*/
+
 .fast{
     display: flex;
     align-items: center;
@@ -246,6 +333,30 @@ main{
 
 }
 
+@media (max-width:720px) {
+    .fast{
+        flex-direction: column;
+        text-align: center;
+
+        &__content{
+            width: 100%;
+        }
+        &__background {
+            max-width: 90%;
+            width: 90%;
+            margin: 20px 0px 100px 0px;
+        }
+    }
+    .options{
+        align-items: center;
+    }
+    
+}
+
+
+/*================same sections ============*/
+
+
 .sections{
     display: flex;
     align-items: center;
@@ -279,7 +390,6 @@ main{
         align-items: flex-start;
         justify-content: center;
         width: 445/1110*100%;
-
     }
     &__header{
         @extend %title;
@@ -300,24 +410,63 @@ main{
     }
 }
 
+@media (max-width:1050px) {
+    .sections{
+        &__content{
+            width:60%;
+        }
+        &__background{
+            margin: 122px 50px 130px 0px;
+            }
+        &__background,&__second-background{
+            margin: 91px 50px 114px 0px;
+        }
+        &__background,&__third-background{
+            margin: 122px 50px 116px 0px;
+        }
+    }
+}
+@media (max-width:720px) {
+    .sections{
+        flex-direction: column;
+        text-align: center;
+        &__content{
+            width:100%;
+        }
+        &__background{
+            order: 2;
+                max-width: 90%;
+                width: 90%;
+                margin: 100px 0;
+        }
+        &__button{
+            width:  70%;
+            margin: 40px auto 0px ;
+        }
+    }
+
+}
+/*=================  price ===============*/
+
 .price{
     background: url(../img/Rectangle.png) top no-repeat;
     &__content{
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
-        // justify-content: center;
         text-align: center;
         align-items: center;
         font-family: $fontFamily;   
+        width: 600/1110*100%;
     }
     &__header{
         @extend %title;
-        width: 600/1110*100%;
         margin-top: 237px;
+        width: 100%;
     }
     &__text{
         @extend %text;
-        width: 600/1110*100%;
+        width: 100%;
         margin-bottom: 35.8px;
     }
     &__money{
@@ -326,7 +475,6 @@ main{
         letter-spacing: 1px;
         color: #222F65;
         width: 350/1110*100%;
-        display: inline-block;
         line-height: 66px;
     }
     &__kit{     
@@ -335,9 +483,8 @@ main{
         line-height: 26px;
         color: #37447E;
         margin-bottom: 60px;
-        width: 350/1110*100%;
+        width: 350/600*100%;
         margin-top: 1px;
-        display: inline-block;
     }
     &__simple{
         font-weight: 400;
@@ -345,21 +492,29 @@ main{
         line-height: 24px;
         color: #5D6970;
         margin-bottom: 9px;
-        width: 350/1110*100%;
-        display: inline-block;
-
+        width: 350/600*100%;
     }
     &__button{
         @extend %btn;
         padding: 4px 5px;
         margin-bottom: 172px;
         height: 32px;
-        width: 189/1110*100%;
+        width: 189/600*100%;
     }
-
+}
+@media (max-width:720px){
+    .price{
+        &__content{
+            width: 100%;
+        }
+        &__button{
+            width: 70%;
+        }
+    }
 }
 
 
+/*===========footer==========*/
 .footer{
     margin-top: auto;
     background: #E7ECFF;
@@ -440,7 +595,42 @@ main{
         cursor: pointer;
     }
     &__link>svg:hover{
-        fill: #929ca1;
+        fill: #727a7e;
+    }
+}
+
+@media (max-width:720px){
+    .footer{
+        &__upper{
+            flex-wrap: wrap;
+        }
+        &__copy{
+            width: 100%;
+            order: 3;
+        }
+        &__btn{
+            width: 45%;
+            height: 26px;
+        }
+        &__lower{
+            justify-content: center;
+            flex-direction: column;
+            height: auto;
+        }
+        &__nav{
+            width: 90%;
+            margin-right: 0;
+            margin-top: 20px;
+        }
+        &__social{
+            width: 90%;
+        }
+    }
+    .social{
+        &__link>svg{
+            width: 16px;
+            height: 80px;
+        }
     }
 }
 
