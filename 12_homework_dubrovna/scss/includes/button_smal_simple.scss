@@ -1,0 +1,25 @@
+.btn_smal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 24px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    &:hover{
+        box-shadow: 5px 6px 14px 2px rgb(0 0 0 / 62%);
+    }
+}
+.button_smal_simple {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 78%;
+    margin-left: 77px;
+}

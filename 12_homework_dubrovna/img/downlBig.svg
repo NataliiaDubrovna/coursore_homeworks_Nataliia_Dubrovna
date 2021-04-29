@@ -1,0 +1,8 @@
+<svg width="0" height="0" class="hidden">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Download">
+    <path d="M4 12v7h16v-7m-8-8.5v10m0 0l3.375-3.374M12 13.5l-3.375-3.374"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+</svg>
+<svg class="iconDownload">
+  <use xlink:href="#Download"></use>
+</svg>

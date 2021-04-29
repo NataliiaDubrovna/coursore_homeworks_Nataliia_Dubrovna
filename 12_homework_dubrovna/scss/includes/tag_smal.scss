@@ -1,0 +1,33 @@
+.tag_smal_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 16%;
+    margin-left: 61px;
+}
+.tag_smal{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: right;
+    padding: 6px 14px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gray_t{
+    border: 1px solid #E0E0E0;
+    background: #FFFFFF;
+}
+.tag_smal.gray_t{
+    background: rgba(224, 224, 224, 0.3);
+}
+.blue_t{
+    background: #18A0FB;
+    border: 1px solid #18A0FB;
+    color: #FFFFFF;
+}

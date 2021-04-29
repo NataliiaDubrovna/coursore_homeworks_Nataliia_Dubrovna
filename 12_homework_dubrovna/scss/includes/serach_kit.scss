@@ -1,0 +1,35 @@
+.search_kit_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.search{
+    background: #18A0FB;
+    border: 1px solid #18A0FB;
+    border-radius: 5px 0px 0px 5px;
+    box-sizing: border-box;
+    padding: 12px 16px;
+}
+.dwnld{
+    stroke: #2C2C2C;
+    background: #FFFFFF;
+    border:none;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    border-radius: 0px;
+    box-sizing: border-box;
+    padding: 12px 16px;
+
+}
+.archive{
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 0px 5px 5px 0px;
+    padding: 12px 16px;
+}
+.iconArchive{
+    stroke: #2C2C2C;
+    width: 24px;
+    height: 24px;
+}

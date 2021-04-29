@@ -1,6 +1,44 @@
 
-@import "../includes/button.scss";
-
-.cum{
-    color:pink;
+body{
+    max-width: 1300px;
+    min-width: 1300px;
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.first_colum{
+    flex-basis: 60%;
+}
+.second_colum{
+    flex-basis: 40%;
+}
+.title{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #2C2C2C;
+    margin-left: 58px;
+}
+.title_big{
+    margin-bottom: 26px;
+    margin-top: 44px;
+}
+.title_smal{
+    margin-bottom: 26px
+}
+
+@import "../includes/button_big_simple.scss";
+@import "../includes/button_big_right.scss";
+@import "../includes/button_big_left.scss";
+
+@import "../includes/button_smal_simple.scss";
+@import "../includes/button_smal_right.scss";
+@import "../includes/button_smal_left.scss";
+
+@import "../includes/tag_big.scss";
+@import "../includes/tag_smal.scss";
+
+@import "../includes/serach_kit.scss";
