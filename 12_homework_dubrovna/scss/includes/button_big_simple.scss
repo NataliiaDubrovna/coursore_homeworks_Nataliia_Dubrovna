@@ -12,6 +12,7 @@
     border: 1px solid transparent;
     cursor: pointer;
     transition: all 0.3s linear;
+
     &:hover{
         box-shadow: 7px 8px 16px 3px rgb(0 0 0 / 62%);
     }
@@ -23,7 +24,6 @@
     margin-bottom: 24px;
     width: 82%;
     margin-left: 60px;
-
 }
 .blue{    
     color: #FFFFFF;

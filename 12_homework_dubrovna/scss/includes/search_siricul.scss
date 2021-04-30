@@ -1,0 +1,53 @@
+.search_siricul_container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.red_serch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 36px;
+    height: 36px;
+    background: #FF3E1D;
+    border-radius: 100px;
+    box-sizing: border-box;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 7px 8px 16px 3px rgb(0 0 0 / 62%);
+    }
+}
+.red_serch .iconMagnify{
+    width: 20px;
+    height: 20px;
+} 
+.green_serch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    width: 48px;
+    height: 48px;
+    background: #00D200;
+    border-radius: 29px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 7px 8px 16px 3px rgb(0 0 0 / 62%);
+    }
+}
+.green_serch .iconMagnify{
+    width: 24px;
+    height: 24px;
+} 
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
